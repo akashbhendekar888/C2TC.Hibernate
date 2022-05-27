@@ -13,19 +13,21 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public void addStudent(Student student) 
+	public Student addStudent(Student student) 
 	{
 		dao.beginTransaction();
 		dao.addStudent(student);
 		dao.commitTransaction();
+		return student;
 	}
 	
 	@Override
-	public void updateStudent(Student student) 
+	public Student updateStudent(Student student) 
 	{
 		dao.beginTransaction();
 		dao.updateStudent(student);
 		dao.commitTransaction();
+		return student;
 	}
 	
 	@Override

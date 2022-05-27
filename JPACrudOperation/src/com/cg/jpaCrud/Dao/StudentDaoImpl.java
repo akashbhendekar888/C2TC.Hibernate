@@ -19,13 +19,15 @@ public class StudentDaoImpl implements StudentDao {
 	}
 
 	@Override
-	public void addStudent(Student student) {
+	public Student addStudent(Student student) {
 		entityManager.persist(student);
+		return student;
 	}
 
 	@Override
-	public void removeStudent(Student student) {
+	public Student removeStudent(Student student) {
 		entityManager.remove(student);
+		return student;
 	}
 
 	@Override

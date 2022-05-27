@@ -6,9 +6,9 @@ package com.cg.jpaCrud.service;
 
 	public interface StudentService {
 
-		public abstract void addStudent(Student student);
+		public abstract Student addStudent(Student student);
 
-		public abstract void updateStudent(Student student);
+		public abstract Student updateStudent(Student student);
 
 		public abstract void removeStudent(Student student);
 

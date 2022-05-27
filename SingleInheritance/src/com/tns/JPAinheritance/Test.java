@@ -27,7 +27,7 @@ public class Test {
 	mg.setEmpName("Akshay Dengale");
 	em.persist(mg);
 	
-	EMP ep2=new EMP();
+ 	EMP ep2=new EMP();
 	ep2.setEmpName("RockyBhai");
 	ep2.setSalary(10000);
 	em.persist(ep);
